@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop All — AÉRA</title>
+<meta name="description" content="AÉRA — conscious activewear made from certified natural and recycled fabrics. PFAS-free, made to last.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main>
+  <div class="shop-banner"><img src="assets/shop-banner.webp" alt="Elevate Your Essentials — Move with comfort and style"></div>
+
+  <div class="wrap">
+    <div class="crumbs-block" style="margin-top:38px">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home <img src="assets/chevron-small.svg" width="16" height="16" alt=""></a>
+        <span id="crumb-current" aria-current="page">Shop All</span>
+      </nav>
+    </div>
+
+    <div class="shop-layout">
+      <aside class="filters" aria-label="Filters">
+        <div class="f-head">
+          <h2>Filters</h2>
+          <button id="reset-filter" title="Reset filters" aria-label="Reset filters"><img src="assets/icon-filter.svg" width="24" height="24" alt=""></button>
+        </div>
+        <hr>
+        <div class="f-list">
+          <button data-category="Tank Tops"><span>Tank Tops</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+          <button data-category="Long Sleeve Tops"><span>Long Sleeve Tops</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+          <button data-category="Leggings"><span>Leggings</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+          <button data-category="Accessories"><span>Accessories</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+        </div>
+        <hr>
+        <div class="f-group">
+          <button class="f-group-head" aria-expanded="true"><h3>Price</h3><img src="assets/chevron-section.svg" width="16" height="16" alt=""></button>
+          <div class="f-body range">
+            <div class="range-track"></div><div class="range-fill"></div>
+            <input id="price-min" type="range" min="0" max="250" step="5" value="50" aria-label="Minimum price">
+            <input id="price-max" type="range" min="0" max="250" step="5" value="200" aria-label="Maximum price">
+            <span class="range-label" id="label-min">$50</span><span class="range-label" id="label-max">$200</span>
+          </div>
+        </div>
+        <hr>
+        <div class="f-group colors">
+          <button class="f-group-head" aria-expanded="true"><h3>Colors</h3><img src="assets/chevron-section-dark.svg" width="16" height="16" alt=""></button>
+          <div class="f-body swatches" id="filter-colors">
+            <button class="swatch" data-color="blue" aria-pressed="false" aria-label="Baby Blue"></button>
+            <button class="swatch" data-color="brown" aria-pressed="false" aria-label="Dark Brown"></button>
+          </div>
+        </div>
+        <hr>
+        <div class="f-group">
+          <button class="f-group-head" aria-expanded="true"><h3>Size</h3><img src="assets/chevron-section.svg" width="16" height="16" alt=""></button>
+          <div class="f-body pills" id="filter-sizes">
+            <button class="pill" aria-pressed="false">X-Small</button>
+            <button class="pill" aria-pressed="false">Small</button>
+            <button class="pill" aria-pressed="false">Medium</button>
+            <button class="pill" aria-pressed="true">Large</button>
+            <button class="pill" aria-pressed="false">X-Large</button>
+          </div>
+        </div>
+        <hr>
+        <div class="f-group">
+          <button class="f-group-head" aria-expanded="true"><h3>Dress Style</h3><img src="assets/chevron-section.svg" width="16" height="16" alt=""></button>
+          <div class="f-body f-list">
+            <button data-style="fitness"><span>Fitness</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+            <button data-style="loungewear"><span>Loungewear</span><img src="assets/chevron-row.svg" width="16" height="16" alt=""></button>
+          </div>
+        </div>
+        <button class="btn btn-dark" id="apply-filter">Apply Filter</button>
+      </aside>
+
+      <section class="shop-main" aria-labelledby="shop-title">
+        <div class="shop-head">
+          <h1 id="shop-title">Shop All</h1>
+          <button class="btn btn-light filters-mobile-toggle"><img src="assets/icon-filter.svg" width="20" height="20" alt="">Filters</button>
+          <p id="shop-count" aria-live="polite">Showing 8 Products</p>
+        </div>
+        <div class="chip-row" id="shop-chips" hidden></div>
+        <div class="shop-grid" id="shop-grid"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body>
+</html>

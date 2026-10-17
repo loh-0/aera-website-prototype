@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AÉRA — Move Mindfully. Live Fully. Wear Consciously.</title>
+<meta name="description" content="AÉRA — conscious activewear made from certified natural and recycled fabrics. PFAS-free, made to last.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home" class="page-home">
+<div id="site-header"></div>
+
+<main>
+  <div class="tagline-bar"><p>WE CARE, YOU WEAR</p></div>
+
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-media"><img src="assets/home-hero.webp" alt="Woman in a baby blue AÉRA tank top by the sea"></div>
+    <div class="wrap wrap-header hero-copy">
+      <h1>Move Mindfully.<br>Live Fully.<br>Wear Consciously.</h1>
+      <a class="btn btn-dark btn-crimson" href="shop.html">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="usp" aria-label="Why AÉRA">
+    <div class="usp-row">
+      <div class="usp-item"><img src="assets/usp-fabrics.svg" width="35" height="35" alt=""><p><strong>Sustainable Fabrics</strong><br><span>Lighter on the planet.</span></p></div>
+      <div class="usp-item"><img src="assets/usp-skin.svg" width="35" height="35" alt=""><p><strong>Skin Loving</strong><br><span>No PFAS. No nasties.</span></p></div>
+      <div class="usp-item"><img src="assets/usp-last.svg" width="35" height="35" alt=""><p><strong>Made To Last</strong><br><span>Outlast trend cycles.</span></p></div>
+      <div class="usp-item"><img src="assets/usp-women.svg" width="37" height="37" alt=""><p><strong>Made By Women</strong><br><span>Comfort you can trust.</span></p></div>
+    </div>
+  </section>
+
+  <section class="arrivals" aria-labelledby="arrivals-title">
+    <h2 class="section-title" id="arrivals-title">new arrivals</h2>
+    <div class="arrivals-row" id="arrivals"></div>
+    <div class="center"><a class="btn btn-dark btn-crimson" href="shop.html">View All</a></div>
+  </section>
+
+  <a class="story-banner" href="about.html" aria-label="Designed in Australia. Inspired by nature. Made to move. Read our story">
+    <img src="assets/home-banner.webp" alt="">
+  </a>
+
+  <section class="occasion" aria-labelledby="occasion-title">
+    <h2 class="section-title" id="occasion-title">browse by occasion</h2>
+    <div class="occasion-grid">
+      <a class="occasion-card occ-lounge" href="shop.html?style=loungewear">
+        <div class="crop"><img src="assets/occasion-lounge.webp" alt=""></div>
+        <h3>Loungewear</h3>
+      </a>
+      <a class="occasion-card occ-fitness" href="shop.html?style=fitness">
+        <div class="crop"><img src="assets/occasion-fitness.webp" alt=""></div>
+        <h3>Fitness</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="newsletter" aria-label="Newsletter">
+    <div class="newsletter-card">
+      <h2>STAY UP TO DATE WITH OUR NEWS &amp; OFFERS</h2>
+      <form class="newsletter-form" id="newsletter" novalidate>
+        <label><img src="assets/icon-mail.svg" width="24" height="24" alt=""><span class="sr-only">Email address</span><input name="email" type="email" placeholder="Enter Your Email Address" autocomplete="email"></label>
+        <button type="submit">SUBSCRIBE NOW</button>
+        <p class="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap wrap-header reviews-head">
+      <h2 class="section-title" id="reviews-title">customer reviews</h2>
+      <div class="reviews-arrows">
+        <button id="rev-prev" aria-label="Previous reviews"><img src="assets/arrow-left.svg" width="24.752" height="24" alt=""></button>
+        <button id="rev-next" aria-label="Next reviews"><img src="assets/arrow-right.svg" width="24.752" height="24" alt=""></button>
+      </div>
+    </div>
+    <div class="reviews-viewport"><div class="reviews-track" id="home-reviews"></div></div>
+  </section>
+
+  <section class="about-teaser" aria-labelledby="about-title">
+    <div class="crop cloud"><img src="assets/logo-cloud.webp" alt=""></div>
+    <h2 class="section-title" id="about-title">about us</h2>
+    <p>Most activewear is designed for performance. AÉRA is designed for you.<br>Not just functional but genuinely safe, sustainably made and designed to move with your body. Every piece is crafted from certified natural fabrics, PFAS-free and built to last.</p>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body>
+</html>

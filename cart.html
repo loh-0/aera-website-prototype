@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopping Cart — AÉRA</title>
+<meta name="description" content="AÉRA — conscious activewear made from certified natural and recycled fabrics. PFAS-free, made to last.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+<div id="site-header"></div>
+
+<main class="wrap page-top">
+  <div class="crumbs-block has-line">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home <img src="assets/chevron-small.svg" width="16" height="16" alt=""></a>
+      <span aria-current="page">Cart</span>
+    </nav>
+  </div>
+
+  <h1 class="cart-title">Shopping Cart</h1>
+  <div class="cart-layout">
+    <section class="cart-items" aria-label="Items in your cart">
+      <div class="cart-list" id="cart-list"></div>
+      <div class="mini-recs">
+        <button class="mini-recs-head" aria-expanded="true"><h2>you might also like</h2><img src="assets/icon-chevron-up-lg.svg" width="24" height="24" alt=""></button>
+        <div class="mini-row" id="mini-row"></div>
+      </div>
+    </section>
+
+    <aside class="summary" aria-labelledby="sum-title">
+      <h2 id="sum-title">Order Summary</h2>
+      <div class="sum-rows">
+        <div class="sum-row"><span>Subtotal</span><span id="sum-subtotal">$177</span></div>
+        <div class="sum-row" id="sum-discount-row" hidden><span id="sum-discount-label">Promo</span><span class="neg" id="sum-discount">-$0</span></div>
+        <div class="sum-row"><span id="sum-delivery-label">Delivery Fee (New Member Discount)</span><span class="neg" id="sum-delivery">$0</span></div>
+        <div class="sum-row total"><span>Total</span><b id="sum-total">$177</b></div>
+      </div>
+      <form class="promo" id="promo">
+        <label><img src="assets/icon-tag.svg" width="24" height="24" alt=""><span class="sr-only">Promo code</span><input name="code" placeholder="Add promo code" autocomplete="off"></label>
+        <button type="submit">Apply</button>
+      </form>
+      <p class="form-note promo-note" id="promo-note" aria-live="polite"></p>
+      <button class="btn btn-dark" id="checkout">Go to Checkout <img src="assets/icon-arrow-white.svg" width="24" height="24" alt=""></button>
+    </aside>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body>
+</html>
